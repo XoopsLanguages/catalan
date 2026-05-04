@@ -1,0 +1,666 @@
+DIFERÈNCIES DE L'LENGUA
+=====================
+
+A continuació es mostren les diferències d'idioma d'una versió a la següent.
+
+================================
+30/03/2025: versió 2.7.0-Betas (publicada anteriorment com a 2.5.12-Betas)
+================================
+/htdocs/modules/system/language/english/admin.php
+- S'ha afegit define('_AM_SYSTEM_MENUS', 'Menús');
+- afegit define('_AM_SYSTEM_MENUS_DESC', 'Gestiona els menús de navegació del lloc');
+
+/htdocs/modules/system/language/english/modinfo.php
+- S'ha afegit define('_MI_SYSTEM_MENUS_ACTIVE', 'Activa el sistema de menús');
+- afegit define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Activa el sistema de gestió de menús integrat per a la navegació del lloc');
+
+/htdocs/modules/system/language/english/admin/menus.php (NOU FITXER)
+Els camps
+- S'ha afegit define('_AM_SYSTEM_MENUS_NAV_MAIN', 'Gestor de menús');
+- S'ha afegit define('_AM_SYSTEM_MENUS_NAV_BACK', 'Torna a la llista de menús');
+- ​​afegit define('_AM_SYSTEM_MENUS_NAV_CATEGORY', 'Vista de categoria');
+- S'ha afegit define('_AM_SYSTEM_MENUS_NAV_TIPS', '<strong>Consells:</strong><ul>...');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ACTIVE', 'Active');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ACTIVE_YES', 'Activat');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ACTIVE_NO', 'Desactivat');
+- S'ha afegit define('_AM_SYSTEM_MENUS_SAVED', 'S'ha desat correctament');
+- afegit define('_AM_SYSTEM_MENUS_DELETED', 'S'ha eliminat correctament');
+- afegit define('_AM_SYSTEM_MENUS_ORDER_SAVED', 'Comanda desada');
+- afegit define('_AM_SYSTEM_MENUS_LISTCAT', 'Llista de categories');
+- afegit define('_AM_SYSTEM_MENUS_LISTITEM', 'Elements de llista');
+- ​​afegit define('_AM_SYSTEM_MENUS_ADDCAT', 'Afegeix una categoria');
+- afegit define('_AM_SYSTEM_MENUS_EDITCAT', 'Edita la categoria');
+- afegit define('_AM_SYSTEM_MENUS_DELCAT', 'Suprimeix la categoria');
+- afegit define('_AM_SYSTEM_MENUS_CATTITLE', 'Títol de la categoria');
+- afegit define('_AM_SYSTEM_MENUS_CATTITLE_DESC', 'Aquí es pot utilitzar un nom constant d'idioma (per exemple, MENUS_HOME) perquè l'etiqueta sigui traduïble.');
+- S'ha afegit define('_AM_SYSTEM_MENUS_CATPREFIX', 'Prefix (HTML)');
+- S'ha afegit define('_AM_SYSTEM_MENUS_CATPREFIX_DESC', 'Etiquet opcional que es mostra abans del títol de la categoria, com ara una icona Font Awesome.');
+- S'ha afegit define('_AM_SYSTEM_MENUS_CATSUFFIX', 'Sufix (HTML)');
+- S'ha afegit define('_AM_SYSTEM_MENUS_CATSUFFIX_DESC', 'Etiquet opcional que es mostra després del títol de la categoria.');
+- afegit define('_AM_SYSTEM_MENUS_CATURL', 'URL');
+- S'ha afegit define('_AM_SYSTEM_MENUS_CATURL_DESC', 'Enllaç per a la categoria en si, com ara "index.php" o una URL absoluta.');
+- ​​S'ha afegit define('_AM_SYSTEM_MENUS_CATTARGET', 'Link Target');
+- S'ha afegit define('_AM_SYSTEM_MENUS_CATPOSITION', 'Posició');
+- afegit define('_AM_SYSTEM_MENUS_DELCAT_CONFIRM', 'Estàs segur que vols eliminar la categoria "%s" i tots els seus elements?');
+- afegit define('_AM_SYSTEM_MENUS_ADDITEM', 'Afegeix element');
+- S'ha afegit define('_AM_SYSTEM_MENUS_EDITITEM', 'Edita l'element');
+- S'ha afegit define('_AM_SYSTEM_MENUS_DELIITEM', 'Suprimeix l'element');
+- ​​S'ha afegit define('_AM_SYSTEM_MENUS_ITEMTITLE', 'Títol de l'element');
+- afegit define('_AM_SYSTEM_MENUS_ITEMTITLE_DESC', 'Aquí es pot utilitzar un nom de constant d'idioma perquè l'etiqueta sigui traduïble.');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ITEMPREFIX', 'Prefix (HTML)');
+- ​​S'ha afegit define('_AM_SYSTEM_MENUS_ITEMPREFIX_DESC', 'Etiquetatge opcional que es mostra abans del títol de l'element, com ara una icona Font Awesome.');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ITEMSUFFIX', 'Sufix (HTML)');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ITEMSUFFIX_DESC', 'Etiquet opcional que es mostra després del títol de l'element. Admet el marcador de posició <{xoInboxCount}>.');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ITEMURL', 'URL');
+- s'ha afegit define('_AM_SYSTEM_MENUS_ITEMTARGET', 'Destí de l'enllaç');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ITEMPOSITION', 'Posició');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ITEMPARENT', 'Element principal');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ITEMCATEGORY', 'Categoria');
+- ​​afegit define('_AM_SYSTEM_MENUS_DELITEM_CONFIRM', 'Estàs segur que vols eliminar l'element "%s" i els seus subelements?');
+- S'ha afegit define('_AM_SYSTEM_MENUS_TARGET_SELF', 'La mateixa finestra');
+- S'ha afegit define('_AM_SYSTEM_MENUS_TARGET_BLANK', 'Nova finestra');
+- afegit define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY', 'Grups que poden veure aquesta categoria');
+- afegit define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY_DESC', 'Els usuaris han de tenir accés a la categoria abans que qualsevol dels seus elements sigui visible.');
+- afegit define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM', 'Grups que poden veure aquest element');
+- afegit define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM_DESC', 'Els permisos d'elements es comproven després del permís de la categoria principal.');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ERROR_CATNOTFOUND', 'No s'ha trobat la categoria');
+- afegit define('_AM_SYSTEM_MENUS_ERROR_CATPROTECTED', 'No es pot suprimir una categoria protegida');
+- afegit define('_AM_SYSTEM_MENUS_ERROR_CATINACTIVE', 'No es pot activar: la categoria està inactiva');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ERROR_ITEMNOTFOUND', 'L'element no s'ha trobat');
+- afegit define('_AM_SYSTEM_MENUS_ERROR_ITEMPROTECTED', 'No es pot eliminar un element protegit');
+- afegit define('_AM_SYSTEM_MENUS_ERROR_ITEMPARENT', 'Element principal seleccionat no vàlid');
+- s'ha afegit define('_AM_SYSTEM_MENUS_ERROR_ITEMCYCLE', 'No es pot establir el pare: crearia una referència circular');
+- S'ha afegit define('_AM_SYSTEM_MENUS_ERROR_ITEMDEPTH', 'S'ha superat la profunditat màxima de nidificació (3 nivells)');
+- afegit define('_AM_SYSTEM_MENUS_ERROR_PARENTINACTIVE', 'No es pot activar: l'element principal està inactiu');
+- afegit define('_AM_SYSTEM_MENUS_ERROR_NOITEMS', 'No hi ha elements de submenú en aquesta categoria.');
+- afegit define('_AM_SYSTEM_MENUS_ERROR_ITEMEDIT', 'Activa aquest element abans d'editar-lo');
+- afegit define('_AM_SYSTEM_MENUS_ERROR_ITEMDISABLE', 'Activa aquest element abans d'eliminar-lo');
+- afegit define('MENUS_HOME', 'Inici');
+- afegit define('MENUS_ADMIN', 'Administració');
+- S'ha afegit define('MENUS_ACCOUNT', 'Compte');
+- S'ha afegit define('MENUS_ACCOUNT_EDIT', 'Edita el compte');
+- afegit define('MENUS_ACCOUNT_LOGIN', 'Inici de sessió');
+- ​​s'ha afegit define('MENUS_ACCOUNT_LOGOUT', 'Logout');
+- afegit define('MENUS_ACCOUNT_REGISTER', 'Registreu-vos');
+- afegit define('MENUS_ACCOUNT_MESSAGES', 'Missatges');
+- afegit define('MENUS_ACCOUNT_NOTIFICATIONS', 'Notificacions');
+- S'ha afegit define('MENUS_ACCOUNT_TOOLBAR', 'Toolbar');
+
+/htdocs/modules/system/constants.php
+- afegit define('XOOPS_SYSTEM_MENUS', 19);
+
+/htdocs/modules/system/language/english/blocks.php
+-added define('_MB_SYSTEM_WAITING_CONTENT_DEPRECATED', "El bloqueig 'Waiting Contents' està obsolet des de XOOPS 2.5.11, si us plau, utilitzeu el mòdul d'espera");
+
+/htdocs/install/language/english/welcome.php
+- versions actualitzades de PHP i MySQL
+
+/htdocs/modules/pm/language/english/main.php
+- defineix actualitzat('_PM_EMAIL_DESC', 'Benvolgut %s, aquest és un missatge transferit des del teu compte a ' . $GLOBALS['xoopsConfig']['sitename']);
+L'enllaç
+- defineix actualitzat('_PM_EMAIL_DESC', 'Benvolgut %s, aquest és un missatge transferit des del teu compte a ' . $GLOBALS['xoopsConfig']['sitename']);
+
+/htdocs/language/english/user.php
+- defineix actualitzat('_US_SORRYNOTFOUND', 'Ho sentim, no s'ha trobat cap informació d'usuari corresponent.');
+- defineix actualitzat('_US_SORRYNOTFOUND', 'Si un compte coincideix amb la informació proporcionada, processarem la vostra sol·licitud. Si no rebeu un correu electrònic en breu, comproveu la vostra carpeta de correu brossa o poseu-vos en contacte amb l'administrador del lloc.');
+
+- defineix actualitzat('_US_PWDMAILED', 'Contrasenya per a %s enviada per correu.');
+- defineix actualitzat('_US_PWDMAILED', 'Si hi ha un compte per a aquest correu electrònic, rebreu instruccions de restabliment de la contrasenya. Comproveu la vostra carpeta de correu brossa si cal o poseu-vos en contacte amb l'administrador del lloc.');
+
+- defineix actualitzat('_US_CONFMAIL', 'Correu electrònic de confirmació per a %s enviat.');
+- defineix actualitzat('_US_CONFMAIL', 'Si existeix un compte per a aquest correu electrònic, rebràs instruccions de restabliment de la contrasenya. Comproveu la vostra carpeta de correu brossa si cal o poseu-vos en contacte amb l'administrador del lloc.');
+
+/htdocs/class/xoopseditor/tinymce5/language/english.php
+- canviat el nom de _XOOPS_EDITOR_TINYMCE_LANGUAGE5 a _XOOPS_EDITOR_TINYMCE5_LANGUAGE
+
+/htdocs/modules/system/themes/transition/language/english/admin.php
+- canviat el nom de _OXYGEN_Server_API a _OXYGEN_SERVER_API
+
+/htdocs/modules/system/language/english/admin/preferences.php.
+- afegit define('_MD_AM_SENDMAIL_NOT_FOUND', 'No s'ha trobat el binari de Sendmail. Comproveu la configuració del vostre servidor.');
+- afegit define('_MD_AM_SENDMAIL_HELP_MISSING_BIN', 'No s'ha detectat cap binari vàlid compatible amb sendmail. Instal·leu un MTA (per exemple, Postfix, msmtp) o canvieu a SMTP a Preferències.');
+
+/htdocs/modules/system/language/english/admin/users.php
+- S'ha afegit define('_AM_SYSTEM_USERS_UNKNOWN_GROUP', 'Grup desconegut');
+
+/htdocs/modules/system/language/english/comment.php
+- afegit define('_CM_ADDCOMMENT', 'Afegeix comentari');
+
+
+/htdocs/install/language/english/install.php
+- S'ha afegit define('_WEBSITE_NAME', 'Lloc XOOPS');
+- s'ha afegit define('_WEBSITE_SLOGAN', 'Només utilitza'l!');
+- S'ha afegit define('_WEBSITE_META_KEYWORDS', 'xoops, marc d'aplicacions web, cms, sistema de gestió de continguts');
+- afegit define('_WEBSITE_FOOTER', "Impulsat per XOOPS © 2001-{X_YEAR} <a href='https://xoops.org' rel='external' title='El projecte XOOPS'>El projecte XOOPS</a>");
+- S'ha afegit define('_WEBSITE_COPYRIGHT', 'Dret d'autor © 2001-{X_YEAR}');
+- afegit define('_WEBSITE_DESCRIPTION', 'XOOPS és un script de portal de codi obert dinàmic basat en orientació a objectes escrit en PHP.');
+- S'ha afegit define('_WEBSITE_CENSOR_REPLACE', 'OOPS');
+
+
+================================
+01/10/2023: versió 2.5.11-Final
+================================
+/language/english/uploader.php
+-added define('_ER_UP_MODE_NOT_CHANGED', 'Fitxer carregat, però no s'ha pogut canviar el mode');
+
+================================
+01/10/2023: versió 2.5.11-RC3
+================================
+
+FITXERS CANVIATS:
+upgrade/language/english/upgrade.php
+actualització/idioma/anglès/smarty3.php
+
+htdocs/class/xoopseditor/tinymce/language/english.php
+- afegit define('_FAILGETIMG', 'No s'ha pogut obtenir la imatge %s');
+
+/htdocs/modules/system/language/english/modinfo.php
+- S'ha afegit define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Desactiva temporalment');
+- afegit define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'Correu electrònic');
+- ​​afegit define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Missatge privat');
+
+/htdocs/modules/system/language/english/admin/preferences.php
+- S'ha afegit define('_MD_AM_DEFAULT_NOTIFICATION_METHOD', 'Mètode de notificació predeterminat');
+- s'ha afegit define('_MD_AM_DEFAULT_NOTIFICATION_METHOD_DESC', 'Per a usuaris nous quan es subscriuen a notificacions d'un fòrum, per exemple.');
+- S'ha afegit define('_MD_AM_MODULEPREF',
+
+
+================================
+19/03/2023: versió 2.5.11-RC1
+================================
+
+FITXERS CANVIATS:
+htdocs/language/english/global.php
+- S'ha afegit define('_DB_QUERY_ERROR', 'La consulta ha fallat! SQL: %s - Error: ');
+- S'ha afegit define('_PRINT', 'Imprimeix');
+- S'ha afegit define('_PDF', 'PDF');
+- ​​S'ha afegit define('_OFF', 'Off');
+
+================================
+02/09/2021: versió 2.5.11-Betas
+================================
+
+FITXERS CANVIATS:
+htdocs/language/english/admin.php
+- afegit define('_AD_WARNING_NO_XML', 'L'extensió PHP XML és necessària per a aquesta funció.');
+
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- S'ha afegit define('_AM_ADMINSTATS_LAST_MONTH', 'El mes passat');
+- S'ha afegit define('_AM_ADMINSTATS_LAST_WEEK', 'La setmana passada');
+- S'ha afegit define('_AM_ADMINSTATS_LAST_DAY', 'Últim dia');
+- ​​S'ha afegit define('_AM_ADMINSTATS_LAST_HOUR', 'Última hora');
+
+htdocs/language/english/global.php
+- S'ha afegit define('_PRINT', 'Imprimeix');
+- S'ha afegit define('_PDF', 'PDF');
+- ​​S'ha afegit define('_OFF', 'Off');
+- defineix canviat('_ON', 'On'); //des de 'en'
+
+htdocs/language/english/global.php
+- ​​defineix canviat('_MIDA', 'Mida'); // mida de la lletra
+- defineix canviat('_FONT', 'Font'); // família de tipus de lletra
+- defineix canviat('_COLOR', 'Color'); // color de lletra
+
+htdocs/install/language/english/install.php
+- afegit define('ERR_COPY_CONFIG_FILE', 'No s'ha pogut copiar el fitxer de configuració %s');
+
+htdocs/install/language/english/welcome.php
+- S'han canviat les versions recomanades de PHP i MySQL, els enllaços han canviat a "https:"
+
+htdocs/modules/system/language/english/admin/preferences.php
+- defineix canviat('_MD_AM_SMTPHOSTDESC', 'Ja sigui un nom d'amfitrió únic o diversos noms d'amfitrió delimitats per punt i coma.<br>També podeu especificar un port diferent per a cada amfitrió utilitzant aquest format: [nom d'amfitrió:port] (p. escriviu, per exemple: (p. ex., "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").<br>Els amfitrions es provaran per ordre.');
+
+htdocs/modules/system/language/english/help/blocksadmin.html
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- defineix canviat('_AM_SYSTEM_MODULES_ADMIN', 'Administració del mòdul XOOPS');
+
+FITXERS NOUS:
+htdocs/themes/xswatch4/language/english/main.php
+Va començar com a còpia de xswatch/language/english/main.php i després:
+- S'ha afegit define('THEME_TOOLBAR_DEBUGMODE', 'Mode depuració');
+- S'ha afegit define('THEME_TOOLBAR_THIS_MODULE', 'Aquest mòdul');
+- S'ha afegit define('THEME_PERMISSIONS_LEGEND', 'Permisos i llegenda');
+- S'ha afegit define('THEME_INBOX_ALERT', 'PM Alert');
+- afegit define('THEME_INBOX_LINK', 'Feu clic aquí per veure la vostra safata d'entrada!');
+- afegit define('THEME_EVENT_DOWNLOADS', 'Descàrregues d'esdeveniments');
+- ​​S'ha afegit define('THEME_FILE_NAME', 'Fitxer');
+- S'ha afegit define('THEME_FILE_SIZE', 'Mida');
+- S'ha afegit define('THEME_CONTROL_NEXT', 'Next');
+- S'ha afegit define('THEME_CONTROL_PREVIOUS', 'Previous');
+
+htdocs/language/english/user.php
+- S'ha afegit define('_US_DESCRIPTIONMIN', 'Longitud mínima requerida: %s');
+- S'ha afegit define('_US_DESCRIPTIONMAX', 'Llargada màxima: %s');
+
+htdocs/modules/system/language/english/admin/mailusers.php
+- afegit define('_AM_SYSTEM_MAILUSERS_MAILTAGS5', '{X_NAME} imprimirà el nom o uname si està buit');
+
+htdocs/modules/system/language/english/admin/images.php
+- added define("_AM_SYSTEM_IMAGES_SCATDELNG","No es pot eliminar aquesta categoria");
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- ​​afegit define('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', 'Aquest mòdul administrador');
+
+FITXERS ELIMINATS:
+htdocs/modules/system/language/english/admin/users.php
+- esborrat define('_AM_SYSTEM_USERS_MODIFYUSER', 'Modifica usuari');
+- esborrat define('_AM_SYSTEM_USERS_DELUSER', 'Suprimeix usuari');
+- s'ha eliminat define('_AM_SYSTEM_USERS_GO', 'Va!');
+
+================================
+29/04/2019: Versió 2.5.10 final
+================================
+DEFINICIONS AFEGIDES/SUPRIMERES:
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- s'ha afegit define('_AM_LABEL_BAN_BY_IP', 'Prohibeix les IP en registres comprovats:');
+- S'ha afegit define('_AM_BUTTON_BAN_BY_IP', 'IP Ban!');
+- S'ha afegit define('_AM_JS_BANCONFIRM', 'IP Bans OK?');
+- S'ha afegit define('_AM_MSG_BANNEDIP', 'Les IP estan prohibides');
+- afegit define('_AM_ADMINSTATS_TITLE', 'Resum del registre del protector');
+
+htdocs/xoops_lib/modules/protector/language/english/modinfo.php
+- S'ha afegit define($constpref . '_ADMINSTATS', 'Visió general');
+- ​​S'ha afegit define($constpref . '_BANIP_TIME0DSC', 'Temps de suspensió en segons per a prohibicions automàtiques d'IP');
+
+htdocs/language/english/uploader.php
+- S'ha afegit define('_ER_UP_INDEXNOTSET', 'Intent d'aconseguir diversos fitxers, s'ha d'establir l'índex.');
+
+htdocs/language/english/admin.php
+- afegit define('_AD_WARNING_OLD_PHP', 'ADVERTIMENT: Penseu en l'actualització a una versió més nova de PHP. Es recomana la versió %s o més recent i serà necessària en futures versions de XOOPS.');
+
+DEFINICIÓ CANVIADA
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- define('_AM_TXT_HOWTOCHANGEDB',"Si voleu canviar el prefix,<br> editeu %s/data/secure.php manualment.<br><br>define('XOOPS_DB_PREFIX', '<b>%s</b>');");
+
+htdocs/install/english/welcome.php
+- S'ha canviat la versió recomanada de PHP, s'ha afegit la secció Notes especials per a SELinux
+
+/home/richard/sites/x258i/htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- a la definició de '_AM_MODULEADMIN_ADMIN_FOOTER', els enllaços XOOPS han canviat a 'https://xoops.org'
+
+FITXERS NOUS:
+n/a
+
+===============================
+01/08/2017: Versió 2.5.9 final
+===============================
+DEFINICIONS AFEGIDES/ESborrades
+
+htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- afegit define('_AM_MODULEADMIN_ABOUT_AMOUNT', 'Quant');
+- afegit define('_AM_MODULEADMIN_ABOUT_AMOUNT_TTL', 'Si us plau, introduïu la quantitat en USD, p. ex. 25,00 $');
+- afegit define('_AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY', 'USD');
+- afegit define('_AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED', '25.00');
+- S'ha afegit define('_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN', '\\$?[0-9]+(,[0-9]{3})*(\\.[0-9]{0,2})?$');
+- afegit define('_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT', 'Fes una donació mitjançant PayPal o una de les principals targetes de crèdit en línia!');
+
+htdocs/install/language/english/install.php
+*NOTA* L'instal·lador s'ha canviat significativament, de manera que aquest fitxer s'ha de revisar de prop
+- S'ha afegit define("CURL_HTTP", "Biblioteca d'URL del client (cURL)");
+- S'ha afegit define('XOOPS_COOKIE_DOMAIN_LABEL', 'Domini de galetes per al lloc web');
+- s'ha afegit define('XOOPS_COOKIE_DOMAIN_HELP', 'Domini per configurar galetes. Pot estar en blanc, l'amfitrió complet de l'URL (www.example.com) o el domini registrat sense subdominis (example.com) per compartir entre subdominis (www.example.com i blog.example.com.)');
+- afegit define('INTL_SUPPORT', 'Funcions d'internacionalització');
+- S'ha afegit define('XOOPS_SOURCE_CODE', "XOOPS a GitHub");
+- S'ha afegit define('XOOPS_INSTALLING', 'Instal·lant');
+- S'ha afegit define('XOOPS_ERROR_ENCOUNTERED', 'Error');
+- s'ha afegit define('XOOPS_ERROR_SEE_BELOW', 'Veure missatges a continuació.');
+- ​​afegit define('MODULES_AVAILABLE', 'Mòduls disponibles');
+- S'ha afegit define('INSTAL·LA_AQUEST_MÒDUL', 'Afegeix %s');
+
+htdocs/install/language/english/finish.php
+: canvieu per referir nous usuaris a xoops.org per obtenir informació sobre mòduls i temes
+
+htdocs/language/english/global.php
+- S'ha afegit define('_UPLOAD', 'Càrrega');
+- S'ha afegit define('_SELECTFILES', 'Selecciona fitxers');
+- S'ha afegit define('_DROPFILESHERE', 'Deixa anar els fitxers aquí');
+- s'ha afegit define('_RETRY', 'Reintentar');
+- S'ha afegit define('_OK', 'Ok');
+- S'ha afegit define('_FORMATPROGRESS', '{percent}% de {total_size}');
+- ​​S'ha afegit define('_FAILUPLOAD', 'La pujada ha fallat!');
+- S'ha afegit define('_WAITINGFORRESPONSE', 'S'està processant...');
+- S'ha afegit define('_PAUSED', 'Paused');
+- s'ha afegit define('_PROCESSINGDROPPEDFILES', 'S'estan processant els fitxers abandonats...');
+- S'ha afegit define('_TYPEERROR', '{file} té una extensió no vàlida. Extensions vàlides: {extensions}!');
+- S'ha afegit define('_SIZEERROR', '{file} és massa gran, la mida màxima del fitxer és {sizeLimit}!');
+- S'ha afegit define('_MINSIZEERROR', '{file} és massa petit, la mida mínima del fitxer és {minSizeLimit}!');
+- s'ha afegit define('_EMPTYERROR', '{file} està buit, si us plau, seleccioneu els fitxers de nou sense ell!');
+- ​​afegit define('_NOFILESERROR', 'No hi ha fitxers per carregar!');
+- s'ha afegit define('_TOOMANYITEMSERROR', 'Es carregarien massa elements ({netItems}). El límit d'elements és {itemLimit}!');
+- S'ha afegit define('_MAXHEIGHTIMAGEERROR', 'La imatge és massa alta!');
+- S'ha afegit define('_MAXWIDTHIMAGEERROR', 'La imatge és massa ampla!');
+- s'ha afegit define('_MINHEIGHTIMAGEERROR', 'La imatge no és prou alta!');
+- s'ha afegit define('_MINWIDTHIMAGEERROR', 'La imatge no és prou ampla!');
+- afegit define('_RETRYFAILTOOMANYITEMS', 'Error de tornar a provar - has arribat al límit de fitxers!');
+- ​​afegit define('_ONLEAVE', 'Els fitxers s'estan penjant, si sortiu ara, la càrrega es cancel·larà!');
+- added define('_UNSUPPORTEDBROWSERIOS8SAFARI', 'Error irrecuperable: aquest navegador no permet la càrrega de fitxers de cap tipus a causa d'errors greus a iOS8 Safari. Utilitzeu iOS8 Chrome fins que Apple solucioni aquests problemes!');
+
+htdocs/language/english/uploader.php
+- afegit define('_ER_UP_INISIZE', 'El fitxer carregat supera la directiva upload_max_filesize a php.ini');
+- afegit define('_ER_UP_FORMSIZE', 'El fitxer carregat supera la directiva MAX_FILE_SIZE especificada al formulari HTML');
+- afegit define('_ER_UP_PARTIAL', 'El fitxer penjat només s'ha penjat parcialment');
+- afegit define('_ER_UP_NOFILE', 'No s'ha carregat cap fitxer');
+- afegit define('_ER_UP_NOTMPDIR', 'Falta una carpeta temporal');
+- afegit define('_ER_UP_CANTWRITE', 'No s'ha pogut escriure el fitxer al disc');
+- afegit define('_ER_UP_EXTENSION', 'La càrrega del fitxer s'ha aturat per extensió. Veure phpinfo()');
+- S'ha afegit define('_ER_UP_UNKNOWN', 'Error de càrrega desconegut');
+
+htdocs/language/english/user.php
+- ​​eliminat define('_US_USECOOKIE', 'Guarda el meu nom d'usuari en una galeta durant 1 any');
+
+htdocs/modules/profile/language/english/admin.php
+- afegit define('_PROFILE_AM_CANNOTDEACTIVATEWEBMASTERS', 'No podeu desactivar el compte d'administrador web');
+
+htdocs/modules/system/language/english/admin/comments.php
+- afegit define('_MP_DELETECOUNT', 'El nombre de membres del grup és massa gran (> 4.000) ');
+
+htdocs/modules/system/language/english/admin/userrank.php
+- S'ha afegit define('_AM_SYSTEM_USERRANK_ERROR', 'Errors');
+
+upgrade/language/english/upgrade.php
+- S'ha afegit define('_LANGUAGE', 'Idioma');
+- S'ha afegit define('_SUPPORT', 'Suport');
+- S'ha afegit define('_XOOPS_SOURCE_CODE', 'XOOPS a GitHub');
+- S'ha afegit define('_PATCH_COUNT', 'Conjunts de pedaços');
+- afegit define('_USERNAME_PLACEHOLDER', 'El teu nom d'usuari');
+- afegit define('_PASSWORD_PLACEHOLDER', 'La teva contrasenya');
+- S'ha afegit define('_CONTINUE', 'Continua');
+- S'ha afegit define('XOOPS_ERROR_ENCOUNTERED', 'Error');
+- s'ha afegit define('XOOPS_ERROR_SEE_BELOW', 'Veure missatges a continuació.');
+
+htdocs/themes/xbootstrap/language/english/main.php
+Enllaç
+- afegit define("THEME_USER_WELCOME", "Benvingut");
+
+FITXERS NOUS:
+- htdocs/modules/system/themes/transition/language/english/admin.php
+- htdocs/modules/system/themes/transition/language/english/localsupport.php
+
+- actualització/idioma/anglès/
+*NOTA* El codi d'actualització s'ha canviat significativament, de manera que aquests fitxers s'han de revisar de prop
+- S'han mogut tots els fitxers d'idioma per pedaç dels directoris de pedaços a actualització/idioma/*
+  , és a dir, upgrade/upd-2.0.18-to-2.3.0/language/english.php es va convertir
+  actualització/idioma/anglès/upd-2.0.18-to-2.3.0.php
+
+- upgrade/language/english/support.php (igual que htdocs/install/language/english/support.php)
+- actualització/idioma/anglès/welcome.php
+
+===============================
+27/05/2016: versió 2.5.8
+===============================
+DEFINICIONS AFEGIDES/ESborrades
+
+/install/language/english/install.php
+/modules/system/language/english/admin/modulesadmin.php
+- afegit define('_AM_SYSTEM_MODULES_INSTALL_MORE',"Instal·la més mòduls");
+
+/modules/system/language/english/admin/users.php
+define('_AM_SYSTEM_USERS_ACTIVATE', 'Activa usuari');
+
+/modules/system/language/english/blocks.php
+define('_MB_SYSTEM_BLOCK_HEIGHT',"Alçada del bloc (línies)");
+
+install/language/english/install.php
+define('CHMOD_CHGRP_REPEAT', 'Torna-ho a provar');
+define('CHMOD_CHGRP_IGNORE', 'Utilitza de totes maneres');
+define('CHMOD_CHGRP_ERROR', 'És possible que l'instal·lador no pugui escriure el fitxer de configuració %1$s.<p>PHP està escrivint fitxers amb l'usuari %2$s i el grup %3$s.<p>El terrible
+
+DEFINICIÓ CANVIADA
+xoops_lib/modules/protector/language/english/modinfo.php
+define($constpref . '_HIJACK_TOPBITDSC',...
+
+/modules/system/themes/default/language/english/admin.php
+define('_OXYGEN_CODESVN', 'Repositori de codi');
+
+install/language/english/install.php
+define('SAVED_MAINFILE', 'Configuració desada');
+define('ERR_NEED_WRITE_ACCESS', 'El servidor ha de tenir accés d'escriptura als fitxers i carpetes següents<br />(és a dir, <em>chmod 775 directory_name</em> en un servidor UNIX/LINUX)<br />Si no estan disponibles o no es creen correctament, creeu manualment i configureu els permisos adequats.');
+Els servidors
+define('ERR_COPY_MAINFILE', 'No s'ha pogut copiar el fitxer de distribució a %s');
+define('ERR_WRITE_MAINFILE', 'No s'ha pogut escriure a %s. Comproveu el permís del fitxer i torneu-ho a provar.');
+define('ERR_READ_MAINFILE', 'No s'ha pogut obrir %s per llegir');
+
+/modules/system/themes/zetadigme/language/english/admin.php
+define('_MD_CODESVN', 'Repositori de codi');
+
+FITXERS NOUS:
+/language/english/stopwords.php
+/language/english/xmf.php
+
+ACTUALITZADA Exemple de classe XoopsMailerLocal:
+htdocs/language/english/xoopsmailerlocal.php
+
+===============================
+14/06/2014: Versió 2.5.7 final
+===============================
+DEFINICIONS AFEGIDES/ESborrades
+
+/install/language/english/install.php
+- s'ha afegit define('WRITTEN_LICENSE',"Clau de llicència escrita XOOPS %s: <strong>%s</strong>");
+
+===============================
+18/03/2014: versió 2.5.7 RC1
+===============================
+DEFINICIONS AFEGIDES/ESborrades
+
+/modules/system/language/english/admin.php
+- S'ha afegit define('_AM_SYSTEM_USAGE',"Ús");
+- S'ha afegit define('_AM_SYSTEM_ACTIVE',"Active");
+
+
+===============================
+15/04/2012: versió 2.5.5
+===============================
+DEFINICIONS AFEGIDES/ESborrades
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- S'ha afegit define("_AM_MODULEADMIN_HOME", "Inici");
+- S'ha afegit define("_AM_MODULEADMIN_DASHBOARD", "Tauler");
+- S'ha afegit define("_AM_MODULEADMIN_ABOUT", "Quant a");
+- S'ha afegit define("_AM_MODULEADMIN_PERMISSIONS", "Permisos");
+- afegit define("_AM_MODULEADMIN_ABOUT_RELEASEDATE","Alliberat: ");
+- afegit define("_AM_MODULEADMIN_ABOUT_AUTHOR","Autor: ");
+- afegit define("_AM_MODULEADMIN_ABOUT_CREDITS","Crèdits: ");
+- afegit define("_AM_MODULEADMIN_ABOUT_LICENSE","Llicència: ");
+- afegit define("_AM_MODULEADMIN_ABOUT_AUTHOR_NAME","Nom de l'autor: ");
+- S'ha afegit define("_AM_MODULEADMIN_ABOUT_AUTHOR_INFO","Informació de l'autor");
+- afegit define("_AM_MODULEADMIN_ADMIN_FOOTER", "<div class='center smallsmall italic pad5'>Aquest mòdul el manté <a class='tooltip' rel='external' href='http://xoops.org/' title='Visiteu la comunitat XOOPS'>XOOPS Community'>XOOPS Community"</a></a></div>);
+
+/language/english/calendar.php
+- S'ha afegit define("_CAL_FORMAT","Y-m-d");
+
+/xoops_lib/modules/protector/language/english/modinfo.php
+
+- S'ha afegit define($constpref."_ADMINHOME","Inici");
+- S'ha afegit define($constpref."_ADMINABOUT","Quant a");
+- S'ha afegit define($constpref.'_STOPFORUMSPAM_ACTION','Atura el correu brossa del fòrum');
+- S'ha afegit define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Comprova les dades POST amb els spammers registrats a la base de dades de www.stopforumspam.com. Requereix php CURL lib.');
+
+
+/install/language/english/install.php
+- S'ha afegit define( "FILTER_FUNCTIONS", "Filtrer funcions");
+
+/language/english/global.php
+- S'ha afegit define('_DBDATESTRING', 'Y-m-d');
+- S'ha afegit define('_DBTIMESTRING', 'H:i:s');
+- S'ha afegit define('_DBTIMESTAMPSTRING', 'Y-m-d H:i:s');
+
+/language/english/pmsg.php
+- afegit define('_PM_READ', 'Ja llegit');
+
+/modules/system/language/english/admin.php
+- S'ha afegit define("_AM_SYSTEM_UNINSTALL","Desinstal·la");
+
+VEURE TAMBÉ:
+/modules/profile/docs/lang_diff.txt
+
+===============================
+17/11/2011: versió 2.5.4
+===============================
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+_AM_MODULEADMIN_CONFIG_DB
+_AM_MODULEADMIN_CONFIG_ADMIN
+
+===============================
+10/10/2011: versió 2.5.4 RC
+===============================
+
+FITXERS NOUS:
+modules/pm/language/english/help/help.html
+modules/profile/language/english/help/help.html
+modules/protector/language/english/help/help.html
+
+DEFINICIONS AFEGIDES/ESborrades
+
+/language/english/pmsg.php
+delete define('_PM_READ', 'Ja llegit');
+
+/language/english/user.php
+- S'ha afegit define('_US_SKYPE', 'Skype');
+- S'ha afegit define('_US_FACEBOOK', 'Facebook');
+
+/modules/pm/language/english/main.php
+- s'ha eliminat define("_PM_RECEIVE","RECEIVE");
+- defineix eliminat("_PM_POST","POST");
+- s'ha eliminat define("_PM_READBOX","READBOX");
+- s'ha eliminat define("_PM_RSAVEBOX","Recei_SAVEBOX");
+- esborrat define("_PM_SENTBOX","SENTBOX");
+- defineix eliminat("_PM_PSAVEBOX","Post_SAVEBOX");
+- deleted define("_PM_SAVED","S'ha desat correctament");
+- esborrat define("_PM_TOC","De: ");
+- esborrat define("_PM_UID","ID del remitent");
+
+/language/english/findusers.php
+- S'ha afegit define('_MA_USER_FACEBOOK', 'Enllaç a Facebook'); // PER FER
+- S'ha afegit define('_MA_USER_SKYPE', 'Skype Link');// PER FER
+
+/modules/pm/language/english/modinfo.php
+- S'ha afegit define("_PM_MI_ABOUT", "Quant a");
+
+/modules/profile/language/english/admin.php
+- S'ha afegit define('_PROFILE_AM_ACTION', 'Acció');
+
+/modules/profile/language/english/modinfo.php
+- S'ha afegit define("_PROFILE_MI_ABOUT", "Quant a");
+- S'ha afegit define("_PROFILE_MI_HOME", "Inici");
+
+
+/modules/system/language/english/admin/preferences.php
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_GENERAL","Configuració general");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_USERSETTINGS","Configuració d'informació de l'usuari");
+- defineix eliminat("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_METAFOOTER","Meta etiquetes i peu de pàgina");
+- suprimit define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_CENSOR","Opcions de censura de paraules");
+- esborrat define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_SEARCH","Opcions de cerca");
+- ​​s'ha eliminat define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_MAILER","Configuració del correu electrònic");
+- s'ha eliminat define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_AUTHENTICATION","Opcions d'autenticació");*/
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_GENERAL","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_USERSETTINGS","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_METAFOOTER","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_CENSOR","A faire");
+- defineix eliminat("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_SEARCH","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_MAILER","A faire");
+- defineix eliminat("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_AUTHENTICATION","A faire");
+- defineix eliminat("_MD_AM_LOADINGIMG", "Mostra la imatge carregant...?");
+- defineix eliminat("_MD_AM_CHNGUTHEME", "Canvia el tema de tots els usuaris");
+
+/modules/system/language/english/admin/users.php
+- afegit define("_AM_SYSTEM_USERS_ACCEPT_EMAIL","Accepta el correu electrònic de l'administrador");
+
+- esborrat define("_AM_SYSTEM_USERS_NAV_MANAGER","Gestor d'usuaris");
+- deleted define("_AM_SYSTEM_USERS_USERPOST","Publicacions d'usuari");
+- esborrat define("_AM_SYSTEM_USERS_STORIES","Històries");
+- esborrat define("_AM_SYSTEM_USERS_COMMENTS","Comentaris");
+- deleted define("_AM_SYSTEM_USERS_PTBBTSDIYT","Premeu el botó de sota per sincronitzar les dades si creieu que la informació de les publicacions de l'usuari anterior no sembla indicar l'estat real");
+- deleted define("_AM_SYSTEM_USERS_CNGTCOM","No s'han pogut obtenir els comentaris totals");
+- deleted define("_AM_SYSTEM_USERS_CNGTST","No s'han pogut obtenir històries totals");
+- defineix eliminat("_AM_SYSTEM_USERS_LIST","Llista");
+- deleted define("_AM_SYSTEM_USERS_USERPOST","Publicacions d'usuari");
+- esborrat define("_AM_SYSTEM_USERS_STORIES","Històries");
+- esborrat define("_AM_SYSTEM_USERS_COMMENTS","Comentaris");
+- deleted define("_AM_SYSTEM_USERS_PTBBTSDIYT","Premeu el botó de sota per sincronitzar les dades si creieu que la informació de publicacions de l'usuari anterior no indica l'estat real");
+- deleted define("_AM_SYSTEM_USERS_CNGTCOM","No s'han pogut obtenir tots els comentaris");
+- deleted define("_AM_SYSTEM_USERS_CNGTST","No s'han pogut obtenir totes les històries");
+- defineix eliminat("_AM_SYSTEM_USERS_LIST","Llista");
+
+xoops_lib/modules/protector/language/english/admin.php
+- s'ha afegit define("_AM_ADV_REGISTERGLOBALS2","i col·loqueu-hi la línia següent:");
+
+FITXERS CANVIATS:
+
+/modules/system/language/english/admin/users.php (Mamba)/
+/language/english/mail_template/activated.tpl
+/language/english/mail_template/adminactivate.tpl
+/language/english/mail_template/lostpass1.tpl
+/language/english/mail_template/lostpass2.tpl
+/language/english/mail_template/register.tpl
+/language/english/mail_template/welcome.tpl
+/modules/system/language/english/admin/avatars.php
+/modules/system/language/english/admin/banners.php
+/modules/system/language/english/admin/blocksadmin.php
+/modules/system/language/english/admin/comments.php
+/modules/system/language/english/admin/preferences.php
+/modules/system/language/english/admin/userrank.php
+/modules/system/language/english/admin/users.php
+/modules/system/language/english/help/mailusers.html
+/modules/system/language/english/help/preferences.html
+/modules/system/language/english/admin.php
+/modules/system/language/english/blocks.php
+/modules/system/language/english/modinfo.php
+/modules/system/themes/default/language/english/admin.php
+/modules/system/themes/zetadigme/language/english/admin.php
+/themes/suico/language/english/main.php
+/themes/zetagenesis/language/english/main.php
+
+
+===============================
+05/10/2011: versió 2.5.4 Beta
+===============================
+- s'han actualitzat diverses traduccions a l'anglès (DCrussader/Mamba)
+- s'ha eliminat idioma/anglès/calendar.php _CAL_DEF_DATE_FORMAT
+- s'ha eliminat idioma/anglès/calendar.php _CAL_TT_DATE_FORMAT
+- mòduls/system/language/english/admin/users.php eliminats _AM_SYSTEM_USERS_NAV_MANAGER
+- mòduls/system/language/english/admin/preferences.php suprimits _MD_AM_LOADINGIMG
+- mòduls/system/language/english/admin/preferences.php suprimits _MD_AM_CHNGUTHEME
+- mòduls suprimits/pm/language/english/admin/main.php _PM_RECEIVE, _PM_POST, _PM_READBOX, _PM_RSAVEBOX, _PM_SENTBOX, _PM_PSAVEBOX, _PM_SAVED, _PM_TOC
+- afegit /modules/profile/language/english/admin.php _PROFILE_AM_ACTION
+- afegit /modules/profile/language/english/main.php _PROFILE_MI_ABOUT
+- afegit /modules/profile/language/english/main.php _PROFILE_MI_HOME
+- afegit /modules/pm/language/english/modinfo.php _PM_MI_ABOUT
+- S'han afegit mòduls/system/language/english/admin/users.php _AM_SYSTEM_USERS_FACEBOOK, _AM_SYSTEM_USERS_SKYPE
+- s'ha afegit idioma/anglès/user.php _US_SKYPE, _US_FACEBOOK
+
+xoops_lib/modules/protector/language/english/modinfo.php
+- S'ha afegit define($constpref.'_STOPFORUMSPAM_ACTION','Atura el correu brossa del fòrum');
+- S'ha afegit define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Comprova les dades POST amb els spammers registrats a la base de dades de www.stopforumspam.com. Requereix php CURL lib.');
+
+
+
+===============================
+06/09/2011: versió 2.5.2 RC
+===============================
+ - s'ha afegit idioma/anglès/misc.php _MSC_CLICK_TO_OPEN_IMAGE, _MSC_RESIZED_IMAGE, _MSC_ORIGINAL_IMAGE
+ - s'ha afegit idioma/anglès/pmsg.php _PM_SURE_TO_DELETE, _PM_READ
+ - S'han afegit modules/pm/language/english/admin/main.php _PM_READ, _PM_SUBJECT_ICONS
+ - mòduls\system/language/english/admin/tplsets.php _AM_SYSTEM_TEMPLATES_SET
+ - s'han eliminat mòduls/system/themes/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+ - s'han eliminat els mòduls/system/language/english/admin/blocksadmin.php _AM_SYSTEM_BLOCKS_SAVE
+ - s'ha afegit idioma/anglès/calendar.php _CAL_DEF_DATE_FORMAT
+ - s'ha afegit idioma/anglès/calendar.php _CAL_TT_DATE_FORMAT
+
+===============================
+15/03/2011: versió 2.5.1 RC
+===============================
+
+S'han afegit constants d'idioma:
+  modules/system/language/english/admin/images.php _AM_SYSTEM_IMAGES_URL
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+
+Constants de llenguatge modificades:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_ABOUT_TEXT, _OXYGEN_WEBSITE
+  modules/system/language/english/helper/help_center.html, modulesadmin.html
+
+S'han eliminat constants d'idioma:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXTP
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXTP

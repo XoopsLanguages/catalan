@@ -1,0 +1,50 @@
+<div class="outer" id="help-template">
+<h1 class="head">Ajuda: <a class="ui-corner-all tooltip" href="&lt;{$xoops_url}&gt;/modules/profile/admin/index.php" title="Back to the Administration of Profile"> Perfil <img alt="Back to the Administration of Profile" src="&lt;{xoAdminIcons 'home.png'}&gt;"/></a></h1>
+ -----Contingut d'ajuda ----------- 
+<h4 class="odd">DESCRIPCIÓ</h4>
+<p class="even">El mòdul Perfil és per gestionar camps de perfil d'usuari personalitzats.</p>
+<h4 class="odd">INSTAL·LA/DESINSTAL·LA</h4>
+<p>No cal mesures especials, seguiu el procés d'instal·lació estàndard: extreu la carpeta /profile al directori ../modules. Instal·leu el mòdul mitjançant Admin -&gt; System Module -&gt; Modules.</p>
+<p>Les instruccions detallades sobre la instal·lació dels mòduls estan disponibles a la pàgina <a href="https://www.gitbook.com/book/xoops/xoops-operations-guide/" target="_blank" title="XOOPS Operations Manual">Manual d'operacions XOOPS</a> <br/><br/></p>
+<h4 class="odd">INSTRUCCIONS DE FUNCIONAMENT</h4>
+<p class="even">Per configurar aquest mòdul cal:</p>
+<ul>
+<li>Configureu les vostres preferències per al mòdul (vegeu 'Preferències') i opcionalment el bloc Perfil si voleu utilitzar-lo (vegeu 'Blocs').</li>
+<li>Editeu les categories existents o afegiu-ne de noves.</li>
+<li>Editeu els camps existents o afegiu-ne de nous. Aquí podeu especificar quins camps seran visibles en quina categoria i si seran visibles durant el registre de l'usuari.</li>
+<li>Definiu l'ordre dels passos de registre.</li>
+<li>I, finalment, podeu establir permisos per a camps individuals: quins són editables i quins es poden cercar.<br/><br/></li>
+</ul>
+<h4 class="odd">Mesures anti-spam</h4>
+<p class="even">Per minimitzar els registres de correu brossa, feu el següent:</p>
+<ul>
+<li> aneu al mòdul Protector d'Administració, aneu a Preferències i, a continuació, a la part inferior, en aquesta opció:
+
+            "Atura el correu brossa del fòrum"
+            Comprova les dades POST amb els spammers registrats a la base de dades www.stopforumspam.com. <br/>
+            Estableix-lo a "Prohibir la IP (sense límit)"
+        </li>
+<br/>
+<li> a /class/captcha/config.php, assegureu-vos que el mode estigui definit com a "text":<br/><br/>
+<span style="font-style: italic;">     retorna $config = array(<br/>
+    'disabled' =&gt; fals, // Desactiva CAPTCHA<br/>
+    'mode' =&gt; 'text', // mode predeterminat, podeu triar 'text', 'imatge', 'recaptcha' (requereix la clau API)<br/>
+    'name' =&gt; 'xoopscaptcha', // nom captcha<br/>
+    'skipmember' =&gt; true, // Omet la comprovació CAPTCHA dels membres<br/>
+    'maxattempts' =&gt; 10, // Màxim d'intents per a cada sessió<br/>
+    );</span></li>
+<br/>
+<li> Al mòdul Perfil, aneu a Administrador i al pas bàsic situat a:<br/>
+
+            /modules/profile/admin/step.php?id=1<br/>
+
+            defineix "Desa després de l'aturada" a "No"
+        </li>
+<br/><br/>
+<li> A les preferències del perfil, configureu l'opció "Utilitza Captcha després del segon pas de registre" a "Sí" (és el valor predeterminat)</li>
+<br/>
+<ul>
+<h4 class="odd">TUTORIAL</h4>
+<p class="even">Tutorial properament.<br/></p>
+ -----Contingut d'ajuda ----------- 
+</ul></ul></div>

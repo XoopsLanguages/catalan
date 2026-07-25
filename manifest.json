@@ -16,6 +16,15 @@
       "updated": "2026-05-04",
       "download": "https://github.com/XoopsLanguages/catalan/releases/download/latest/catalan-core-2.7.0.zip",
       "manifest_url": "https://raw.githubusercontent.com/XoopsLanguages/catalan/master/manifest.json"
+    },
+    "2.7.1": {
+      "lifecycle": "active",
+      "coverage": 0.0,
+      "provided": 0,
+      "required": 3098,
+      "updated": "2026-07-25",
+      "download": "https://github.com/XoopsLanguages/catalan/releases/download/latest/catalan-core-2.7.1.zip",
+      "manifest_url": "https://raw.githubusercontent.com/XoopsLanguages/catalan/master/manifest.json"
     }
   },
   "modules": {},

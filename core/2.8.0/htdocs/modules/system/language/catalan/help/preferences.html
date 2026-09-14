@@ -1,0 +1,60 @@
+<div class="outer" id="help-template">
+<h1 class="head">Ajuda: Preferències</h1>
+<h4 class="odd">Descripció</h4>
+<p class="even">
+        Els panells de preferències són on configureu les preferències de tot el lloc. Val la pena dedicar-se el temps a treballar-hi, ja que algunes configuracions poden tenir un impacte significatiu en el rendiment, la seguretat i la facilitat d'ús del vostre lloc.
+    </p>
+<h4 class="odd">Configuració general</h4>
+<p class="even">
+        Aquestes són les preferències més importants i a les que s'accedeix amb més freqüència. Definireu el nom del lloc i l'eslògan del vostre lloc web. També seleccionareu el tema predeterminat i la GUI d'administració. I si necessiteu treballar al vostre lloc web, podeu tancar-lo per a tots els usuaris. També podeu configurar la memòria cau a tot el mòdul
+        vegades.
+    </p>
+<h4 class="odd">Metaetiquetes i peu de pàgina</h4>
+<p class="even">
+        Les metaetiquetes proporcionen informació sobre la vostra informació: descriuen la naturalesa del vostre lloc web. El seu ús principal és ajudar els motors de cerca i els seus robots a indexar correctament el vostre lloc web, és a dir, ajudar les persones adequades a trobar-lo. La informació que proporcioneu s'inclou a la capçalera de cada web
+        pàgina. Hauria de representar el contingut del lloc en conjunt: la metainformació és la mateixa a totes les pàgines, actualment no es pot personalitzar per a diferents mòduls o pàgines.<br/><br/>
+
+        Tingueu en compte que els principals motors de cerca utilitzen diferents estratègies per indexar llocs web. Poden posar diferents ponderacions a les metaetiquetes o fins i tot ignorar-les completament. L'ús acurat de la metainformació pot ajudar al vostre lloc web a obtenir millors rànquings en els motors de cerca, i és útil cercar
+        informació sobre les estratègies d'indexació dels vostres referents dominants (vegeu el fitxer de registre del vostre lloc web). Això us pot ajudar a optimitzar la vostra metainformació o altres aspectes del disseny i el contingut del vostre lloc per millorar la vostra classificació. <br/><br/>
+
+        Intenta ser precís i honest en proporcionar metainformació. No intentis '<em>manipular</em>’ per obtenir una millor classificació: poden reconèixer aquest comportament i el vostre lloc pot ser rebaixat o inclòs a la llista negra del seu índex.
+
+        <br/><br/>El <strong>Meta Copyright</strong> i <strong>Peu de pàgina</strong> admeten dues etiquetes de substitució per simplificar el manteniment.
+        <br/> - <strong>{X_SITEURL}</strong> se substituirà per l'URL complet de la pàgina principal del vostre lloc.
+        <br/> - <strong>{X_YEAR}</strong> se substituirà per l'any actual de quatre dígits. Elimina la necessitat d'actualitzar la data superior dels drets d'autor cada any.
+    </p>
+<h4 class="odd">Opcions de censura de paraules</h4>
+<p class="even">
+        XOOPS pot censurar automàticament les paraules no desitjades que poden publicar els visitants al vostre lloc i substituir-les per un terme genèric i alternatiu de la vostra elecció. La funció de censura consumeix alguns recursos del sistema i pot alentir una mica el vostre lloc. Està desactivat per defecte.<br/><br/>
+
+        Per implementar la censura al vostre lloc, seleccioneu "<em>habilitat</em>’ botó d’opció. Heu d'introduir una llista de paraules no desitjades al '<em>paraules per censurar</em>’, separant-los amb el caràcter de tub. Aquesta funció no distingeix entre majúscules i minúscules. Introduïu un terme de substitució adequat a "
+Botó<em>substituir
+            males paraules amb</em>’ caixa. El valor predeterminat és #OOPS#.
+
+    </p>
+<h4 class="odd">Opcions de cerca</h4>
+<p class="even">
+        La funció de cerca és una de les eines més importants per localitzar informació en un lloc web del portal. La cerca XOOPS classifica els resultats per mòdul: els registres s'identifiquen com a notícies, descàrregues, enllaços o altres tipus segons els mòduls que heu instal·lat. <br/><br/>
+
+        Les cerques globals de tots els recursos del vostre lloc estan habilitades de manera predeterminada. Si desactiveu les cerques globals, aquesta funció deixarà d'estar disponible i el bloc de cerca no funcionarà.
+        La longitud mínima predeterminada de les paraules clau per a les cerques és de cinc caràcters. Els termes que siguin més curts seran ignorats. Això és útil per controlar la precisió de les cerques, encara que no serveix gaire per a termes com "mapa del lloc". Les paraules clau curtes acostumen a ser més comunes, per la qual cosa solen tornar més
+        nombre de registres, molts dels quals poden ser irrellevants. Les paraules clau més llargues tendeixen a recuperar menys registres, però amb un grau de precisió més elevat.<br/><br/>
+
+        La cerca és relativament cara en termes computacionals i, per tant, excloure els termes curts reduirà la càrrega del servidor. Tanmateix, tingueu en compte que de vegades és útil poder cercar a curt termini.
+
+    </p>
+<h4 class="odd">Configuració del correu electrònic</h4>
+<p class="even">
+        Aquesta secció del tauler de control s'utilitza per configurar el vostre correu electrònic per al sistema. Es recomana que deixeu el Mètode d'enviament de correu electrònic a la configuració predeterminada "PHP (correu)". No cal que ompliu els camps Sendmail o SMTP tret que utilitzeu una opció alternativa de lliurament de correu electrònic.
+    </p>
+<h4 class="odd">Opcions d'autenticació</h4>
+<p class="even">
+        Deixeu-lo a la base de dades Xoops i podreu ignorar totes les altres opcions que hi ha.<br/><br/>
+
+        LDAP o Microsoft Active Directory s'han afegit per a l'autenticació com a alternativa als usuaris normals de Xoops. El motiu és que en moltes empreses ja teniu una base de dades d'usuaris a ADS o LDAP, i poden utilitzar-la per iniciar sessió a XOOPS i no cal registrar un altre compte.
+    </p>
+<h4 class="odd">Configuració del mòdul del sistema</h4>
+<p class="even">
+        Aquí podeu activar/desactivar cadascuna de les seccions del sistema, així com especificar els valors predeterminats de tot el sistema, p. pel nombre d'avatars o imatges mostrats per pàgina. També podeu seleccionar un editor predeterminat per a blocs, comentaris i per a tots els mòduls.
+    </p>
+</div>

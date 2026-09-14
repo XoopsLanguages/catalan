@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Instruccions d'instal·lació de XOOPS</title>
+<meta content="XOOPS" name="keywords"/>
+<meta content="XOOPS installation guide" name="description"/>
+<style type="text/css">
+        body {
+            font-family:                        Lucida Grande, Verdana, Geneva, Sans-serif;
+            margin:                             0;
+            padding:                            0;
+            font-size:                          13px;
+            color:                              #333;
+            background-color:                   #fff;
+        }
+
+        a {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+            font-weight:                        normal;
+        }
+
+        a:visited {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+        }
+
+        a:hover {
+            color:                              #3D9DD3;
+            text-decoration:                    none;
+            background-color:                   transparent;
+        }
+
+        .page {
+            background-color:                   #fff;
+            margin:                             10px 30px 0;
+            padding:                            0;
+        }
+
+        .page h1 {
+            background-color:                   transparent;
+            border-bottom:                      1px solid #999;
+            color:                              #000;
+            font-size:                          18px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h2 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          16px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h3 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          14px;
+            font-weight:                        bold;
+        }
+
+        .page ul {
+            margin:                             20px 0 15px 0;
+        }
+
+        .page li {
+            margin-bottom:                      9px;
+        }
+
+        .page li p {
+            margin-left:                        0;
+            margin-right:                       0;
+        }
+
+        p {    }
+
+    </style>
+</head>
+<body>
+<div class="page">
+<h1>Instal·lant XOOPS</h1>
+<h2>Primera instal·lació</h2>
+<h3>Pròleg:</h3>
+<p>
+<abbr title="eXtensible Object-Oriented Portal System">XOOPS</abbr> és un codi obert
+        Sistema de publicació web orientat a objectes escrit en PHP. És una eina ideal per
+        desenvolupament de petits i grans llocs web dinàmics de comunitats, portals intraempresarials, portals corporatius, weblogs i molt més.
+    </p>
+<p>
+        XOOPS es publica sota els termes del
+        <a href="https://www.gnu.org/licenses/gpl-2.0.html" rel="external">GNU General Public License (GPL)</a>
+        versió 2 o superior, i és gratuït d'utilitzar i modificar.
+        La redistribució és gratuïta sempre que compleixi els termes de distribució de la GPL.
+    </p>
+<h2>Requisits</h2>
+<ul>
+<li>Servidor WWW (<a href="http://www.apache.org/" rel="external">Apache</a>, <a href="https://www.nginx.com/" rel="external" s="">NGINX</a>, IIS, etc.)</li>
+<li><a href="https://www.php.net/" rel="external">PHP</a> 8.2 o superior, 8.4+ recomanat</li>
+<li><a href="https://www.mysql.com/" rel="external">MySQL</a> 5.7 .8 o superior, es recomana MySQL 8.4.5+</li>
+</ul>
+<h3>Abans d'instal·lar</h3>
+<ol>
+<li>Configura correctament el servidor WWW, PHP i el servidor de bases de dades.</li>
+<li>Prepareu una base de dades per al vostre lloc XOOPS.</li>
+<li>Prepareu el compte d'usuari i concediu-li l'accés a la base de dades.</li>
+<li>Feu que els directoris i els fitxers siguin escrivibles: %s</li>
+<li>Per consideracions de seguretat, us recomanem molt que moveu els dos directoris següents fora de <a href="http://phpsec.org/projects/guide/3.html" rel="external">arrel del document</a> i canvieu els noms de les carpetes: %s</li>
+<li>Crea (si encara no està present) i fes que els directoris es puguin escriure: %s</li>
+<li>Activa la cookie i JavaScript del teu navegador.</li>
+</ol>
+<h2>S'està instal·lant localment</h2>
+<p>Si esteu executant un entorn local per al desenvolupament o la prova, assegureu-vos que teniu l'anterior
+    requisits complerts. Un cop fet això, copieu el contingut del fitxer <em>htdocs
+Estat</em> (del XOOPS
+    fitxer de distribució) a la ruta del document arrel del vostre entorn web. Un cop copiats els fitxers allà,
+    podeu iniciar la instal·lació dirigint el vostre navegador a "http://<em>yoursite.com</em>". Això iniciarà el procés d'instal·lació.
+</p>
+<h2>Instal·lació en una plataforma allotjada</h2>
+<p>Si esteu executant en un entorn allotjat, desempaqueteu els fitxers XOOPS localment o al servidor si teniu
+    accés al shell (és a dir, SSH). Un cop fet, assegureu-vos de moure o copiar tots els fitxers XOOPS del fitxer <em>htdocs
+Estat</em>
+    al directori web arrel (el vostre proveïdor sol proporcionar aquesta ubicació amb indicacions).
+    Un cop copiats els fitxers allà, podeu iniciar la instal·lació apuntant al vostre navegador
+    "http://<em>yoursite.com</em>". Això iniciarà el procés d'instal·lació.
+</p>
+<h2>Continuant amb la instal·lació</h2>
+<p>Només cal que seguiu les instruccions pas a pas de l'instal·lador.</p>
+</div>
+</body>
+</html>

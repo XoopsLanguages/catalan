@@ -1,0 +1,80 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    ca
+ * _CHARSET     UTF-8
+ */
+define('_MI_SYSTEM_NAME', 'Sistema');
+define('_MI_SYSTEM_DESC', 'Per a l\'administració de la configuració central del lloc.');
+define('_MI_SYSTEM_BNAME2', 'Menú d\'usuari');
+define('_MI_SYSTEM_BNAME3', 'Inicia la sessió');
+define('_MI_SYSTEM_BNAME4', 'Cerca');
+define('_MI_SYSTEM_BNAME5', 'Continguts pendents');
+define('_MI_SYSTEM_BNAME6', 'Menú principal');
+define('_MI_SYSTEM_BNAME7', 'Informació del lloc');
+define('_MI_SYSTEM_BNAME8', 'Qui és en línia');
+define('_MI_SYSTEM_BNAME9', 'Principals publicadors');
+define('_MI_SYSTEM_BNAME10', 'Nous membres');
+define('_MI_SYSTEM_BNAME11', 'Comentaris recents');
+define('_MI_SYSTEM_BNAME12', 'Opcions de notificació');
+define('_MI_SYSTEM_BNAME13', 'Temes');
+define('_MI_SYSTEM_ADMENU1', 'Bàners');
+define('_MI_SYSTEM_ADMENU2', 'Blocs');
+define('_MI_SYSTEM_ADMENU3', 'Grups');
+define('_MI_SYSTEM_ADMENU5', 'Mòduls');
+define('_MI_SYSTEM_ADMENU6', 'Preferències');
+define('_MI_SYSTEM_ADMENU7', 'Emoticones');
+define('_MI_SYSTEM_ADMENU9', 'Rangs d\'usuari');
+define('_MI_SYSTEM_ADMENU10', 'Editar usuari');
+define('_MI_SYSTEM_ADMENU11', 'Enviar email a usuaris');
+define('_MI_SYSTEM_ADMENU12', 'Trobar usuaris');
+define('_MI_SYSTEM_ADMENU13', 'Imatges');
+define('_MI_SYSTEM_ADMENU14', 'Avatars');
+define('_MI_SYSTEM_ADMENU15', 'Plantilles');
+define('_MI_SYSTEM_ADMENU16', 'Comentaris');
+define('_MI_SYSTEM_PREFERENCE_BREAK_GENERAL', 'Configuració general');
+define('_MI_SYSTEM_PREFERENCE_TIPS', 'Ajuda en línia?');
+define('_MI_SYSTEM_PREFERENCE_TIPS_DSC', 'Això us ofereix consells i ajuda en línia');
+define('_MI_SYSTEM_PREFERENCE_ICONS', 'Icones');
+define('_MI_SYSTEM_PREFERENCE_BREADCRUMB', 'Molla de pa');
+define('_MI_SYSTEM_PREFERENCE_BREAK_ACTIVE', 'Secció activa');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_AVATARS', 'Avatars actius');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BANNERS', 'Bàners actius');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BLOCKSADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_COMMENTS', 'Comentaris actius');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_FILEMANAGER', 'Gestor de fitxers actiu');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_GROUPS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_IMAGES', 'Gestor d\'imatges actives');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAILUSERS', 'Usuaris de correu electrònic actius');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MODULESADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_PREFERENCES', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_SMILIES', 'Emoticones actius');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_TPLSETS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERRANK', 'Rangs d\'usuaris actius');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERS', 'Usuaris actius');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAINTENANCE', 'Manteniment actiu');
+define('_MI_SYSTEM_PREFERENCE_BREAK_PAGER', 'Nombre de files per mostrar a l\'administració');
+define('_MI_SYSTEM_PREFERENCE_AVATARS_PAGER', 'Nombre d\'avatars per mostrar per pàgina');
+define('_MI_SYSTEM_PREFERENCE_BANNERS_PAGER', 'Nombre de bàners per mostrar per pàgina');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_PAGER', 'Nombre de comentaris per mostrar per pàgina');
+define('_MI_SYSTEM_PREFERENCE_GROUPS_PAGER', 'Nombre de grups per mostrar per pàgina');
+define('_MI_SYSTEM_PREFERENCE_IMAGES_PAGER', 'Nombre d\'imatges per mostrar per pàgina');
+define('_MI_SYSTEM_PREFERENCE_SMILIES_PAGER', 'Nombre de emoticones per mostrar per pàgina');
+define('_MI_SYSTEM_PREFERENCE_USERRANKS_PAGER', 'Nombre de classificacions per mostrar per pàgina');
+define('_MI_SYSTEM_PREFERENCE_USERS_PAGER', 'Nombre d\'usuaris a mostrar per pàgina');
+define('_MI_SYSTEM_PREFERENCE_BREAK_EDITOR', 'Configuració de l\'editor');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR', 'Editor per als blocs:');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR', 'Editor per als comentaris:');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR', 'Editor per a tots els mòduls:');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_ANONPOST', '');
+define('_MI_SYSTEM_PREFERENCE_REDIRECT', '');
+define('_MI_SYSTEM_PREFERENCE_JQUERY_THEME', 'Tema jQuery');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Desactivar temporalment');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'Correu electrònic');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Missatge privat');
+define('_MI_SYSTEM_MENUS_ACTIVE', 'Habilita el sistema de menús');
+define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Habiliteu el sistema de gestió de menús integrat per a la navegació pel lloc');

@@ -1,0 +1,37 @@
+<div class="outer" id="help-template">
+<h1 class="head">Ajuda: Plantilles</h1>
+<h4 class="odd">Descripció</h4>
+<p class="even">
+        XOOPS permet una certa separació entre la presentació real del lloc (el “<em>pell</em>” o interfície d'usuari) i el codi que s'executa a la part posterior. El primer es gestiona mitjançant un mecanisme sofisticat basat en temes gràfics. Un tema pot incloure, en la seva forma bàsica, l'HTML essencial.
+        plantilles que defineixen la interfície visual del lloc, així com els fulls d'estil i les imatges necessàries per complementar aquesta interfície visual. Els temes es poden canviar a la interfície administrativa, de manera que canviar tota l'aparença d'un lloc XOOPS només és qüestió de canviar el valor d'un
+        selector i fent clic a "Acceptar". XOOPS també ofereix als administradors del lloc la possibilitat de permetre als usuaris triar entre alguns temes disponibles.<br/><br/>
+
+        En termes generals, a <strong><em>tema</em></strong> és el marc visual d'alt nivell d'un lloc: el tema defineix, per exemple, la disposició general del lloc; d'altra banda, no sol definir la distribució específica del contingut dins d'un bloc. Això ho gestiona a
+        entitat diferent anomenada a <em><strong>conjunt de plantilles</strong></em>. Un conjunt de plantilles<em> </em>és un conjunt de plantilles HTML que defineixen la presentació del contingut dins de tots els blocs que formen un lloc web XOOPS. Si volem una metàfora més clara d'això, podríem dir que el tema és com
+        l'arquitecte d'una casa, mentre que el conjunt de plantilles és com el decorador d'interiors. El primer fixa les parets i defineix la distribució general, però és el segon qui s'encarrega de “<em>vestint-se</em>” aquelles parets.<br/><br/>
+
+        Si el tema actiu és senzill que només inclou un fitxer de tema, fitxers CSS i algunes imatges, XOOPS utilitza el conjunt de plantilles per defecte per definir la presentació dels blocs. Tanmateix, alguns temes complexos són prou sofisticats com per incloure el seu propi conjunt de plantilles. En aquest cas, el lloc
+        L'administrador ha d'utilitzar la interfície administrativa per configurar tant el tema com el conjunt de plantilles. <br/><br/>
+
+        Com és el tema <em>màgia</em> complert? És a dir, com poden les plantilles HTML incloure contingut dinàmic? Això no es fa amb miralls i fum, sinó amb un motor de plantilles intel·ligent anomenat
+        <strong><a href="https://www.smarty.net/" rel="external">Intel·ligent</a></strong> que fa la funció del que abans es deia
+        <em><strong>interpolació variable</strong></em>. Expressat d'una manera senzilla, podríem dir que el sistema XOOPS utilitza fitxers PHP per mantenir la lògica dels mòduls (accés a la base de dades, assignació de variables, gestió de drets...), fitxers HTML amb variables Smarty inserides per gestionar el
+        interfície visual real i el motor Smarty per inserir valors i cadenes en llocs específics dins de l'HTML que construeix les pàgines vistes per l'usuari final. Amb tot, el que això significa per a vostè es pot resumir fàcilment: gràcies al seu sistema de temàtica, XOOPS permet als dissenyadors de llocs crear més
+        llocs interessants i visualment impressionants sense gaire preocupació pel que passa sota el capó.
+    </p>
+<h4 class="odd">Clonació i descàrrega de conjunts de plantilles</h4>
+<p class="even">
+        Si voleu crear un conjunt de plantilles personalitzades, podeu fer una còpia del conjunt predeterminat (o qualsevol altre) seleccionant el "<em>clon</em>’ (se us demanarà que doneu un nom al nou conjunt). A diferència del predeterminat, altres conjunts de plantilles es poden editar lliurement. També podeu desar una còpia d'a
+        plantilla establerta al disc seleccionant el "
+Directori<em>descarregar</em>’ o traieu-lo amb l’enllaç ‘<em>esborra</em>. De vegades també podeu veure un "<em>Generar</em>’ al costat dels mòduls nous per als quals encara no s'han creat plantilles.
+    </p>
+<h4 class="odd">Edició de plantilles</h4>
+<p class="even">
+        Podeu veure una llista completa de plantilles disponibles navegant per la vista d'arbre del directori. Quan seleccioneu una plantilla, XOOPS l'obrirà en un editor on la podreu editar. <br/><br/>
+
+        Durant l'edició de plantilles, heu d'activar una preferència que actualitzi automàticament els fitxers .tpl de la plantilla del mòdul si hi ha fitxers més nous al directori temes/el vostre tema/plantilles per al tema actual (Mòdul del sistema -&gt; Preferències -&gt; Configuració general -&gt; Actualitza fitxers .tpl de la plantilla del mòdul).
+        del directori de temes/temes/plantilles? -&gt; '<em>Sí</em>’). Això s'ha de desactivar un cop el lloc es faci públic.<br/><br/>
+        Si accidentalment malmeteu una plantilla, no oblideu que podeu recuperar un "<em>bé</em>’ còpia del conjunt de plantilles per defecte. Si esteu treballant amb plantilles no estàndard, pot ser una bona idea desar una còpia al disc abans de començar a modificar-les.
+
+    </p>
+</div>
